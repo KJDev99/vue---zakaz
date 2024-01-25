@@ -1,0 +1,57 @@
+.card {
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: 700;
+        color: rgb(21, 23, 131);
+    }
+
+    button {
+        border: 0;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        display: inline-block;
+        background-color: rgb(42, 145, 70);
+        cursor: pointer;
+
+        &[disabled] {
+            cursor: default;
+            opacity: 0.4;
+        }
+
+        &:hover {
+            background-color: rgb(16, 237, 46);
+        }
+    }
+
+    .order {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
